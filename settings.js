@@ -1,147 +1,333 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
-
-const fs = require('fs')
-const chalk = require('chalk')
-
-//Api Website\\
-global.APIs = {
-	zenz: 'https://zenzapis.xyz',
-}
-
-//Api Key\\
-global.APIKeys = {
-	'https://zenzapis.xyz': 'your key',
-}
-
-
-//aumto functioner
-global.autoTyping = false //auto tying in gc (true to on, false to off)
-global.autoreadpmngc = false //auto reading in gc and pm (true to on, false to off)
-global.autoReadGc = false //auto reading in gc (true to on, false to off)
-global.autoRecord = false //auto recording (true to on, false to off)
-global.available = true //auto available (true to on, false to off)
-
-//semt menu variants
-global.vidmenu = fs.readFileSync("./XeonMedia/theme/Cheems-bot.mp4") //gif and video menu
-
-//documents variants
-global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
-global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-global.doc4 = 'application/zip'
-global.doc5 = 'application/pdf'
-global.doc6 = 'application/vnd.android.package-archive'
-
-//owmner v card
-عالمي . vcardowner  = [ '9] // رقم مالكك07833860146
-عالمي . المالك  =  "Captain_Kid17."  //اسم المالك الخاص بك  
-عالمي . ytname  =  "YT: Captain_Kid17 "  // اسم قناة ur yt
-global.socialm = "GitHub:  Captain_Kid17" //ur github or insta name
-global.location = "Captain_Kid17, Captain_Kid17,Captain_Kid17 " //ur location
-
-//bot bomdy 
-global.owner = ['9660540637980']
-global.ownertag = 07833860146' //ur tag number
-global.botname = '07833860146 ٫' //ur bot name
-global.linkz = "https://chat.whatsapp.com/LXZnV3rPFqD4ryPvG0Cyvvv" //your theme url which will be displayed on whatsapp
-global.websitex = "https://chat.whatsapp.com/LXZnV3rPFqD4ryPvG0Cyvvv" //ur website to be displayed
-global.botscript = 'https://chat.whatsapp.com/LXZnV3rPFqD4ryPvG0Cyvvv' //script link
-global.reactmoji = "🌚" //ur menu react emoji
-global.themeemoji = "🌞" //ur theme emoji
-global.packname = "Captain_Kid17⍣" //ur sticker watermark packname
-global.author = "07833860146⍣" //ur sticker watermark author
-
-//Bot theme media
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-
-// دامتاباسي
-global.premium = ['07833860146] //ur premium numbers
-global.ntilinkytvid = []
-global.ntilinkytch = []
-global.ntilinkig = []
-global.ntilinkfb = []
-global.ntilinktg = []
-global.ntilinktt = []
-global.ntilinktwt = []
-global.ntilinkall = []
-global.nticall = []
-global.ntwame = []
-global.nttoxic = []
-global.ntnsfw = []
-global.ntvirtex = []
-global.rkyt = []
-global.wlcm = []
-global.gcrevoke = []
-global.autorep = []
-global.ntilink = []
-
-//omther
-global.sessionName = 'session'
-global.antitags = true
-global.prefa = ['','!','.','🐦','🐤','🗿']
-global.sp = '⭔'
-global.mess = {
-    success: 'تم يروحي ✓',
-    admin: 'هذه الميزه للرجاله المشرفين,استرجل وجرب مره تانيه!! ',
-    botAdmin: 'يجب أن يكون البوت مسؤولاً أولاً!',
-    owner: 'هذه الميزة للمالك فقط!',
-    group: 'لميزة تستخدم فقط للمجموعات!',
-    private: 'الميزه المستخدمة فقط للدردشة الخاصة!',
-    bot: 'هذه الميزة مخصصة للبوت فقط',
-    wait: 'استني شويه...',
-    linkm: 'أين الرابط?',
-    error: 'ايرور!!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
-    ban: 'لقد تم حظرك من قبل المالك ، إذا كنت تريد أن تكون غير محظور ، مالك الدردشة.',
-    nsfw: 'لم يتم تنشيط ميزة nsfw ، يرجى الاتصال بالمسؤول للتفعيل',
-    banChat: 'تم حظر الروبوت في هذه المجموعة ، يرجى الاتصال بالمالك لإلغاء الحظر'
-}
-    global.limitawal = {
-    premium: "Infinity",
-    free: 12,
-    monayawal: 1000
-}
-   global.rpg = {
-   darahawal: 100,
-   besiawal: 15,
-   goldawal: 10,
-   emeraldawal: 5,
-   umpanawal: 5,
-   potionawal: 1
-}
-global.thumb = fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')
-global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update'${__filename}'`))
-	delete require.cache[file]
-	require(file)
-})
+window._CCSettings = {
+    platform: "fb-instant-games",
+    groupList: ["default"],
+    collisionMatrix: [
+        [true]
+    ],
+    rawAssets: {
+        assets: {
+            "1": ["images/game/game_img_coin_bg", 4, 1],
+            "2": ["images/game/icon_coin", 4, 1],
+            "3": ["images/user/default_profile", 4, 1],
+            "4": ["images/privacyPolicy/modal_btn_green", 4, 1],
+            "5": ["images/privacyPolicy/modal_bg_agree", 4, 1],
+            "6": ["images/privacyPolicy/modal_bg", 4, 1],
+            "7": ["images/game/game_img_list_bg_yellow", 4, 1],
+            "8": ["images/game/game_ranking_btn_share", 4, 1],
+            "9": ["images/game/game_ranking_btn_play", 4, 1],
+            "10": ["images/game/icn_present", 4, 1],
+            "11": ["images/game/icn_close", 4, 1],
+            "12": ["images/skin_ui/img_title_get_for_coins", 4, 1],
+            "13": ["images/skin_ui/btn_unlock_random", 4, 1],
+            "14": ["images/skin_ui/img_carouse", 4, 1],
+            "15": ["images/skin_ui/icn_back", 4, 1],
+            "16": ["images/skin_ui/btn_ad", 4, 1],
+            "17": ["images/confetti/confetti_green", 4, 1],
+            "18": ["images/confetti/confetti_yellow", 4, 1],
+            "19": ["images/confetti/confetti_red", 4, 1],
+            "20": ["images/confetti/confetti_blue", 4, 1],
+            "21": ["images/game/game_tab_global_enable", 4, 1],
+            "22": ["images/game/game_btn_invite", 4, 1],
+            "23": ["images/game/game_tab_friends_select", 4, 1],
+            "24": ["images/game/game_icn_back", 4, 1],
+            "25": ["images/game/game_tab_friends_enable", 4, 1],
+            "26": ["images/game/game_tab_global_select", 4, 1],
+            "28": ["images/privacyPolicy/modal_btn_normal", 4, 1],
+            "29": ["images/game/game_icn_rank", 4, 1],
+            "30": ["images/skin/icon/1", 4, 1],
+            "31": ["images/game/icn_badge", 4, 1],
+            "32": ["images/game/game_btn_play_with_friends", 4, 1],
+            "33": ["images/ice/img_cone_shadow", 4, 1],
+            "34": ["images/game/game_icn_share", 4, 1],
+            "35": ["images/background/img_bg_background", 4, 1],
+            "36": ["images/game/game_btn_play_single", 4, 1],
+            "37": ["images/title/logo", 4, 1],
+            "38": ["images/background/img_bg_floor", 4, 1],
+            "39": ["images/title/icn_shop", 4, 1],
+            "40": ["fonts/orange/orange_font_0", 4, 1],
+            "41": ["fonts/orange/orange_font.fnt", 3],
+            "42": ["prefabs/common/BonusTimeElapsedDialog.prefab", 8],
+            "43": ["prefabs/skin/SkinDialog.prefab", 8],
+            "44": ["fonts/black_88/black_88.fnt", 3],
+            "45": ["fonts/black_88/black_88_0", 4, 1],
+            "46": ["prefabs/game/GameRankItem.prefab", 8],
+            "47": ["images/game/game_img_list_bg_black", 4, 1],
+            "48": ["prefabs/common/Confetti.prefab", 8],
+            "53": ["prefabs/common/CoinGroup.prefab", 8],
+            "54": ["fonts/white_88/white_88_0", 4, 1],
+            "55": ["fonts/white_88/white_88.fnt", 3],
+            "56": ["images/skin_ui/img_ball_bg", 4, 1],
+            "57": ["images/skin_ui/img_ball_hatena", 4, 1],
+            "58": ["prefabs/skin/SkinCell.prefab", 8],
+            "59": ["prefabs/common/BonusGroup.prefab", 8],
+            "60": ["prefabs/common/OfflineAlert.prefab", 8],
+            "61": ["materials/LightMaterial.mtl", 7],
+            "62": ["effects/light-effect2d.effect", 2],
+            "63": ["prefabs/game/GameFriendPlay.prefab", 8],
+            "64": ["images/game/game_btn_play", 4, 1],
+            "65": ["prefabs/common/RankingGroup.prefab", 8],
+            "66": ["images/txt_name/txt_Vanilla.png", 5],
+            "67": ["images/ice/img_cone_shadow.png", 5],
+            "68": ["images/result/btn_retry.png", 5],
+            "69": ["images/skin/icon/1.png", 5],
+            "70": ["images/result/btn_claim_gray.png", 5],
+            "71": ["images/confetti/confetti_yellow.png", 5],
+            "72": ["images/ice/icn_retry.png", 5],
+            "73": ["images/ice/img_emitter.png", 5],
+            "74": ["images/txt_name/txt_Chocolate.png", 5],
+            "75": ["images/result/img_achievement_bar.png", 5],
+            "76": ["images/txt_name/txt_%.png", 5],
+            "77": ["images/confetti/confetti_green.png", 5],
+            "78": ["images/confetti/confetti_red.png", 5],
+            "79": ["images/title/logo.png", 5],
+            "80": ["images/ice/icn_setting.png", 5],
+            "81": ["images/txt_name/txt_match_orange.png", 5],
+            "82": ["images/result/img_star_wht.png", 5],
+            "83": ["images/txt_name/txt_Soda.png", 5],
+            "84": ["images/result/modal_sample_base.png", 5],
+            "85": ["images/dammy/Sweets_game_UI_採点.png", 5],
+            "86": ["images/skin/icon/4.png", 5],
+            "87": ["images/ice/cream_wht.png", 5],
+            "88": ["images/result/modal_result.png", 5],
+            "89": ["images/txt_name/txt_failed.png", 5],
+            "90": ["images/share/share.png", 5],
+            "91": ["images/txt_name/txt_Orange.png", 5],
+            "92": ["images/dammy/Sweets_game_UI.png", 5],
+            "93": ["images/ice/cream_solid_wht.png", 5],
+            "94": ["images/txt_name/txt_score.png", 5],
+            "95": ["images/confetti/confetti_blue.png", 5],
+            "96": ["images/title/btn_PLAY.png", 5],
+            "97": ["images/title/icn_shop.png", 5],
+            "98": ["images/txt_name/txt_caramel.png", 5],
+            "99": ["images/txt_name/txt_Mango.png", 5],
+            "100": ["images/skin/icon/5.png", 5],
+            "101": ["images/skin/icon/8.png", 5],
+            "102": ["images/result/btn_claim.png", 5],
+            "103": ["images/ice/btn_color.png", 5],
+            "104": ["images/txt_name/txt_Match.png", 5],
+            "105": ["images/ice/img_sample_base.png", 5],
+            "106": ["images/skin/icon/3.png", 5],
+            "107": ["images/txt_name/txt_HOLD-TO-DROP-ICE-CREAM.png", 5],
+            "108": ["fonts/white_88/white_88_0.png", 5],
+            "109": ["images/txt_name/txt_Mix.png", 5],
+            "110": ["images/skin/icon/2.png", 5],
+            "111": ["images/txt_name/txt_Sesame.png", 5],
+            "112": ["images/background/img_bg_floor.png", 5],
+            "113": ["images/background/img_bg_background.png", 5],
+            "114": ["images/dammy/result.png", 5],
+            "115": ["images/txt_name/txt_level.png", 5],
+            "116": ["images/result/img_achievement_bar_gray.png", 5],
+            "117": ["images/skin/icon/9.png", 5],
+            "118": ["images/result/img_star.png", 5],
+            "119": ["fonts/black_88/black_88_0.png", 5],
+            "120": ["images/ice/img_stick_wht.png", 5],
+            "121": ["images/ice/img_emitter_back.png", 5],
+            "122": ["images/user/default_profile.jpg", 5],
+            "123": ["images/share/invite.png", 5],
+            "124": ["images/ice/btn_base.png", 5],
+            "125": ["images/ice/btn_shop.png", 5],
+            "126": ["fonts/orange/orange_font_0.png", 5],
+            "127": ["images/dammy/Sweets_game_UI_gameover.png", 5],
+            "128": ["spines/gameover_continue/gameover_continue.png", 5],
+            "129": ["images/txt_name/txt_Mint.png", 5],
+            "130": ["images/txt_name/txt_completed.png", 5],
+            "131": ["images/txt_name/txt_Blueberry.png", 5],
+            "132": ["images/skin/icon/6.png", 5],
+            "133": ["images/skin/icon/7.png", 5],
+            "134": ["images/txt_name/txt_strawberry.png", 5],
+            "135": ["prefabs/skin/SkinPage.prefab", 8],
+            "138": ["prefabs/common/PrivacyPolicy.prefab", 8],
+            "139": ["prefabs/common/TopGroup.prefab", 8],
+            "142": ["images/ice/cream_solid_wht", 4, 1],
+            "143": ["images/ice/cream_wht", 4, 1],
+            "144": ["prefabs/ice/Cream.prefab", 8],
+            "145": ["images/txt_name/txt_score", 4, 1],
+            "146": ["images/txt_name/txt_Orange", 4, 1],
+            "147": ["images/title/btn_PLAY", 4, 1],
+            "148": ["images/ice/btn_base", 4, 1],
+            "149": ["images/txt_name/txt_Match", 4, 1],
+            "150": ["images/txt_name/txt_Mint", 4, 1],
+            "151": ["images/txt_name/txt_%", 4, 1],
+            "152": ["images/txt_name/txt_Mango", 4, 1],
+            "153": ["images/txt_name/txt_Chocolate", 4, 1],
+            "155": ["images/ice/img_emitter_back", 4, 1],
+            "156": ["images/result/modal_result", 4, 1],
+            "157": ["images/txt_name/txt_strawberry", 4, 1],
+            "158": ["images/result/btn_retry", 4, 1],
+            "159": ["images/result/img_achievement_bar", 4, 1],
+            "160": ["images/game/game_clear_go_to_next", 4, 1],
+            "161": ["images/txt_name/txt_Sesame", 4, 1],
+            "162": ["images/result/img_achievement_bar_gray", 4, 1],
+            "164": ["images/ice/btn_shop", 4, 1],
+            "165": ["images/txt_name/txt_match_orange", 4, 1],
+            "166": ["images/txt_name/txt_failed", 4, 1],
+            "167": ["images/ice/img_emitter", 4, 1],
+            "168": ["images/txt_name/txt_Blueberry", 4, 1],
+            "169": ["images/result/btn_claim", 4, 1],
+            "170": ["images/ice/img_stick_wht", 4, 1],
+            "171": ["images/txt_name/txt_Vanilla", 4, 1],
+            "172": ["images/ice/btn_color", 4, 1],
+            "173": ["images/result/modal_sample_base", 4, 1],
+            "174": ["images/ice/img_sample_base", 4, 1],
+            "175": ["images/result/img_star", 4, 1],
+            "176": ["images/txt_name/txt_level", 4, 1],
+            "177": ["images/result/img_star_wht", 4, 1],
+            "178": ["images/txt_name/txt_Mix", 4, 1],
+            "179": ["images/txt_name/txt_completed", 4, 1],
+            "181": ["images/txt_name/txt_Soda", 4, 1],
+            "183": ["images/txt_name/txt_caramel", 4, 1],
+            "88Dtex9ZRIK5W25fUWu1GZ": ["bonuses/time_elapsed.json", 0],
+            "6f+HRVCj5PgIAs5ioV2iwL": ["documents/privacypolicy.html", 1],
+            "21mBGKzYdGc5pxCuEVihNC": ["documents/terms.html", 1],
+            "edcwC+9ZBEdJGzFl2ni302": ["effects/light-effect.effect", 2],
+            "e1Je2WhyVGk7vhsWk+Gxhj": ["images/dammy/Sweets_game_UI", 4, 1],
+            "c9NwIw+I5BpIxk11R3x4Xd": ["images/dammy/Sweets_game_UI_gameover", 4, 1],
+            f3bbhwTKZCFaI9x112PkQE: ["images/dammy/Sweets_game_UI_採点", 4, 1],
+            af7xTUh6JBo64xu7zQ0FGI: ["images/dammy/result", 4, 1],
+            "489iNG3GxLqbo0nnu4TD5l": ["images/game/AutoAtlas.pac", 6],
+            "abiWPJl9lGp5+NEjwKqn1U": ["images/game/coin_s", 4, 1],
+            "064u0pZu1AfYocsw3O9BMU": ["images/game/game_btn_continue", 4, 1],
+            "eaHX1YUTNEtIZUDbPeF+JD": ["images/game/game_icn_ad", 4, 1],
+            "d6R+5Vs/RIeLNsS9EE0eZB": ["images/game/game_icn_shop_top", 4, 1],
+            "42yPRh1ehCJIF+A54ClmDk": ["images/game/game_img_bg_stage", 4, 1],
+            "55Gn0BdoJHR4Yz5M0cqHBl": ["images/game/game_img_clear", 4, 1],
+            "1bNujK3blP6KzgrctbhUzo": ["images/game/game_img_continue", 4, 1],
+            "30pd/8ZihHZLfKvAklfuIi": ["images/game/game_img_game_over", 4, 1],
+            "63JZSQNZ5MaqfV4zvGQkCE": ["images/game/game_img_line", 4, 1],
+            "6eo4qWh89KAr0SalkvhHm3": ["images/game/game_img_no_thanks", 4, 1],
+            "812CSetClBDLHBMz6Q49yt": ["images/game/game_img_score_bg", 4, 1],
+            "d1SDUw0MFGYpTq8NHEp/CJ": ["images/game/game_img_stage_bg", 4, 1],
+            "3f9IKnl7dOKp5T1gUIAB3r": ["images/ice/icn_retry", 4, 1],
+            "fcKo1mOnVF+bYHGGOWXN3z": ["images/ice/icn_setting", 4, 1],
+            "7cbmwJ5XRA8pqCg/nsSIwx": ["images/privacyPolicy/AutoAtlas.pac", 6],
+            "f5AUufJFVD761A+ccRfR5g": ["images/result/btn_claim_gray", 4, 1],
+            "9fIcZsw1FEHJQzg4tVOIp0": ["images/share/invite", 4, 1],
+            "11F2Z5bDhDZJzjiPn7QbCR": ["images/share/share", 4, 1],
+            "e9k+yFkQ5LrJTSkV922gXf": ["images/skin/icon/2", 4, 1],
+            "11eiASO7dMcbqcdFjq5W/b": ["images/skin/icon/3", 4, 1],
+            "54kaczKINIDItppaNqj4NW": ["images/skin/icon/4", 4, 1],
+            "31S2NC3mJFV6cV9/cAg8VX": ["images/skin/icon/5", 4, 1],
+            d3MAU5Ba1MpKksKCVfeau1: ["images/skin/icon/6", 4, 1],
+            "89ED1PDl5P65+MMKuQy9xj": ["images/skin/icon/7", 4, 1],
+            "53NrtoSO9Nb5UjNpG73A6I": ["images/skin/icon/8", 4, 1],
+            "1criO5kMRAiJYGpe6FwnMM": ["images/skin/icon/9", 4, 1],
+            "9fd3pMl5xNNpABF3InKhNk": ["images/skin_ui/AutoAtlas.pac", 6],
+            "63VejibyRJWYoicls5r1FJ": ["images/txt_name/txt_HOLD-TO-DROP-ICE-CREAM", 4, 1],
+            "11pexcFalLUJgU8/DWXsb2": ["jsons/color/color.json", 0],
+            d7OUeSh8hK2YwMUgUAO5IN: ["jsons/stages/stage1.json", 0],
+            "8d3sT0ihBH57VuGcIsfcOQ": ["jsons/stages/stage10.json", 0],
+            d4Tn2b8xtKypBWDX44u83d: ["jsons/stages/stage11.json", 0],
+            "13W199h1hGD5/0YVN+rEQh": ["jsons/stages/stage12.json", 0],
+            "0fVJ3e/UZO+qFw8hMtz0mb": ["jsons/stages/stage13.json", 0],
+            b9iTV8dxxPU4VYeXkCU6ov: ["jsons/stages/stage14.json", 0],
+            "84OeY4yi5Jtp0ZR4SQ0hnJ": ["jsons/stages/stage15.json", 0],
+            "18knbOEglNNJ3Y5+VTMWCn": ["jsons/stages/stage16.json", 0],
+            ccqM8ly1pAO6lxfLHQyQER: ["jsons/stages/stage17.json", 0],
+            "5d9UrWdfhIwbe4e7syE0vr": ["jsons/stages/stage18.json", 0],
+            "4e2On2VABHLZzXmtWzqA1r": ["jsons/stages/stage19.json", 0],
+            "99qLpwEgZAH7G/xOupOa0T": ["jsons/stages/stage2.json", 0],
+            b03GCA2ElPD6MqUhvtxTUG: ["jsons/stages/stage20.json", 0],
+            "5eNhorA7dOqrgawwMNv2tO": ["jsons/stages/stage21.json", 0],
+            "3ePurixttA86oKpuLqbmPe": ["jsons/stages/stage22.json", 0],
+            bdCJ09D4RL4JDyn22MLiPg: ["jsons/stages/stage23.json", 0],
+            "0fSut8i9dLaKS6tMqku7WF": ["jsons/stages/stage24.json", 0],
+            "8d7iCuYCZAD5+g00nsYmiN": ["jsons/stages/stage25.json", 0],
+            "1a8cvAVhVGBae7x9yDVRuI": ["jsons/stages/stage26.json", 0],
+            "d3F9ZLZaNOQqWxM76dP+wG": ["jsons/stages/stage27.json", 0],
+            "98ZkyUUwlMXKT5oTF88B12": ["jsons/stages/stage28.json", 0],
+            b5Y1lVVhxLv6oOCNjHmsgB: ["jsons/stages/stage29.json", 0],
+            "f3OC/NVdtKfq3RpxBQyim9": ["jsons/stages/stage3.json", 0],
+            "664p0jmcZIsrFPWV9RD/Pv": ["jsons/stages/stage30.json", 0],
+            "7df56XytJGG40hfCfcg99U": ["jsons/stages/stage31.json", 0],
+            "30VC6RCTdMt6Znv2l/o80S": ["jsons/stages/stage32.json", 0],
+            c322IlrzVH2rCZPp74Wj8k: ["jsons/stages/stage33.json", 0],
+            "9dju45mHJGD4ePYIqlV6mp": ["jsons/stages/stage34.json", 0],
+            "9a7br+BMtIvaBvZWf8/xCn": ["jsons/stages/stage35.json", 0],
+            "48r6+PDGFFe4l3DhnjmQTy": ["jsons/stages/stage36.json", 0],
+            "32VEo4/bNNopu8ylEZ01f6": ["jsons/stages/stage37.json", 0],
+            "078hYSLc1GQoLRLgIhCrV8": ["jsons/stages/stage38.json", 0],
+            caGVJNiN5ILppD4g6f8mK7: ["jsons/stages/stage39.json", 0],
+            "17EvSzJUFJNI3mrNdiih97": ["jsons/stages/stage4.json", 0],
+            "76pxZJ3XRBs4iKcW74JWwt": ["jsons/stages/stage40.json", 0],
+            "c5x3gVpkRCi4IPC2ZQXH/j": ["jsons/stages/stage41.json", 0],
+            "c9Z+2mMOtIPaKwKnQpnlFU": ["jsons/stages/stage42.json", 0],
+            "96wst6v9pMpZzgvlenaxtb": ["jsons/stages/stage43.json", 0],
+            "09XUSZ7rNDjqtssHswFaEt": ["jsons/stages/stage44.json", 0],
+            c0dGGYBQVG9ZUFzMjHOfeL: ["jsons/stages/stage45.json", 0],
+            f6VmctsuFFfZjIJnYMPsGq: ["jsons/stages/stage46.json", 0],
+            "5bFnYBDrBJDax592XdE5ng": ["jsons/stages/stage47.json", 0],
+            "1awMO9Z+FEVZrOhPzuqvvd": ["jsons/stages/stage48.json", 0],
+            "6feEOo+npF2KK73AcVa2Wp": ["jsons/stages/stage49.json", 0],
+            "67xAn1O2xPQIuaDqzQWDOA": ["jsons/stages/stage5.json", 0],
+            "93Sl5GiGFPZ5SCJO+9O1P1": ["jsons/stages/stage50.json", 0],
+            "08b8HaHllHia0VfimaAASV": ["jsons/stages/stage51.json", 0],
+            "ebY2AbyqhK6Y5QQgjP+5Rx": ["jsons/stages/stage52.json", 0],
+            "61BaBg16xFgpGDR9jBgnIw": ["jsons/stages/stage53.json", 0],
+            e4tCKCBPFFqLq79n2DIjzZ: ["jsons/stages/stage54.json", 0],
+            "cbzkrzC4tKhLCtZ/xMM4rt": ["jsons/stages/stage55.json", 0],
+            "88AItdF7tKAZgaoUsO5Po6": ["jsons/stages/stage6.json", 0],
+            "0fU8ntt/tO/ogHa2JkwHDL": ["jsons/stages/stage7.json", 0],
+            "2dXiSvd6VBnIJFLUHVPBLt": ["jsons/stages/stage8.json", 0],
+            "b9RQec+15KrJDvK7DWdjYo": ["jsons/stages/stage9.json", 0],
+            fa0AGFPA9Bjasl9PUrX3TP: ["sounds/effects/hook_button.m4a", 9],
+            ddth5lmEpMprbhOcMwAZ9z: ["sounds/effects/se_buy.m4a", 9],
+            "78h0doxT9Fk46yDHzJYh4y": ["sounds/effects/se_drop.m4a", 9],
+            "96NBddpLNMbLDh5xr2FgiI": ["sounds/effects/se_gage_max.m4a", 9],
+            "3fZ/ZtROFGh44Tx/2npjby": ["sounds/effects/se_result_miss.m4a", 9],
+            "ea9j81+YpPPZC/QhNxvo5A": ["spines/gameover_continue/gameover_continue", 4, 1],
+            "d1S/S0rplOnZaKfFUBPtYy": ["spines/gameover_continue/gameover_continue.atlas", 10],
+            "9anvwTOQdL/ZvodFyypJLi": ["spines/gameover_continue/gameover_continue.json", 11]
+        },
+        internal: {
+            "49": ["materials/builtin-unlit.mtl", 7],
+            "50": ["effects/builtin-unlit.effect", 2],
+            "51": ["effects/builtin-2d-gray-sprite.effect", 2],
+            "52": ["materials/builtin-2d-gray-sprite.mtl", 7],
+            "136": ["effects/builtin-clear-stencil.effect", 2],
+            "137": ["materials/builtin-clear-stencil.mtl", 7],
+            "140": ["effects/builtin-2d-spine.effect", 2],
+            "141": ["materials/builtin-2d-spine.mtl", 7],
+            "28dPjdQWxEQIG3VVl1Qm6T": ["effects/builtin-2d-sprite.effect", 2],
+            "796vrvt+9F2Zw/WR3INvx6": ["effects/builtin-unlit-transparent.effect", 2],
+            "6fgBCSDDdPMInvyNlggls2": ["materials/builtin-2d-base.mtl", 7],
+            "ecpdLyjvZBwrvm+cedCcQy": ["materials/builtin-2d-sprite.mtl", 7]
+        }
+    },
+    assetTypes: ["cc.JsonAsset", "cc.TextAsset", "cc.EffectAsset", "cc.BitmapFont", "cc.SpriteFrame", "cc.Texture2D", "cc.SpriteAtlas", "cc.Material", "cc.Prefab", "cc.AudioClip", "cc.Asset", "sp.SkeletonData"],
+    launchScene: "db://assets/scenes/Ice.fire",
+    scenes: [{
+        url: "db://assets/scenes/Ice.fire",
+        uuid: 163
+    }],
+    packedAssets: {
+        "02175db73": [40, 41],
+        "022f08f80": [42, 11, 4, 0, 5, 6],
+        "0314dc1ab": [1, 43, 12, 13, 14, 2, 27, 0, 15, 16],
+        "04c3a9454": [44, 45],
+        "05e012760": [46, 3, 7, 8, 9, 47],
+        "062426abb": ["47LfXTNedBhJ5sf0G+5l7j", 17, 48, 18, 19, "b2aHrECZ5APKGS/0d2hvT1", 20],
+        "079499991": [49, 50],
+        "07ce7530a": [51, 52],
+        "07d1a8cdb": [1, 53, 2],
+        "07f2ec15a": [54, 55],
+        "0833372ec": [56, 57, 58],
+        "08a0c5809": [59, 10],
+        "08d2c8aa5": [60, 0],
+        "09c417b7c": [61, 62],
+        "0a9afb663": [63, 3, 64],
+        "0b10794a3": [21, 22, 23, 3, 7, 65, 8, 9, 24, 25, 26, 0],
+        "0b733480e": ["02delMVqdBD70a/HSD99FK", 66, 67, 68, "12c36c2ed", "12db52f7b", 69, 70, "1888af106", "1c004a921", 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, "6eBWFz0oVHPLIGQKf/9Thu", "71VhFCTINJM6/Ky3oX9nBT", 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, "b4P/PCArtIdIH38t6mlw8Y", 116, 117, 118, 119, 120, 121, 122, 123, "d0qC05vt5GxLaYyB/w3t//", 124, 125, "d8HsitJHxOYqo801xBk8ev", 126, 127, 128, 129, 130, "e8Ueib+qJEhL6mXAHdnwbi", 131, 132, 133, 134],
+        "0d2006c15": [135, 27],
+        "0d669730c": [136, 137],
+        "0d89c691f": [154, 4, "8c20Sso/ZEn7NUfNSM+EBh", 5, 138, 28, 6, 180, 182],
+        "0d9d888e7": [1, 29, 30, 31, 10, 32, 2, 33, 139, 34, 0, 35, 36, 37, 38, 39],
+        "0e4bc3b03": [140, 141],
+        "0e587706c": [142, 143, 144],
+        "0fe8e78dd": [145, 146, 147, 148, 149, 150, 151, 152, 1, 153, 154, 29, 155, 12, 156, 21, 22, 157, 23, 30, 158, 159, 17, 3, 160, 31, 161, 7, 162, 163, 13, 164, 165, 10, 14, 32, 11, 166, 8, 167, 168, 169, 2, 9, 24, 25, 4, 33, 34, 27, 26, 170, 0, 171, 172, 5, 18, 173, 19, 174, 35, 175, 15, 36, 176, 177, 37, 38, 28, 6, 178, 179, 180, 181, 182, 16, 20, 39, 183]
+    },
+    md5AssetsMap: {},
+    orientation: "",
+    debug: false,
+    subpackages: {},
+    uuids: ["a2MjXRFdtLlYQ5ouAFv/+R", "1dbAQoF0ZAE4H0kQv+YIp9", "897aQZ0eBOMITNW7jaF+Bq", "55C+0lv/ZBe5qQu3mk+kt+", "8chd/rdOJJPoGWWoYuiSOQ", "abhKCh2bBPaLZkPMiAkcnW", "e37PQ/UMxIrqMrq18E/QBS", "5dFp8/0w9OVYbrjr2rPRCC", "7ddyQPc3ZJaq6uBcbhA6Ls", "8aBjWqSgJM35QSuYW6Pt7W", "71gSWQOsZB7q8uy82eyXHh", "75bg4OvZNM6bB3aH4WRdo7", "38F0xaDaNEBLs7F02OT7BA", "689uQzLthCRZqtuZAFYZ5Y", "73RN0ZtpdFppgXIjs5oxsv", "c8/oVgMsBGxJRK+/5KyFug", "f0ZuoFZ45HDYhrAg/wPAWe", "54qBWyLxZGoYbXIeL3WrEU", "acjGgxN25ML5mxMqyRh454", "b2R/pHCDxNZ63gpLK7CsYr", "f8nWXPEBRDh4UEb4UKvU0t", "40EhQ8emROkrlCKxhaF7gP", "41PtrkbZtEW4d150o2UXGC", "46RAKp9AVP5K0MHn27t37B", "8aY3vMwVhCoJM6J7zZYdtG", "8bWUWq2hRE+bWuvHMBpzwY", "9eJuOz7RNBEJvJV4I5jibP", "9bvaMerUlDyary99mJa6xp", "dafX1mV8lKRZoBwpX8WKJ4", "30rAcL4k9MKZJ8mB5BYZE+", "4cO/Xk+2ZAbbJ9vZCXwhZk", "5bpTODb8ZDvK4AI+z+3E/A", "73/YuVKstLzoPk58jKNopQ", "90budi2/FJeqlyoU+v6vJU", "939NrfjbJH05rthwkSUqJW", "bdXJJuQZpFqqBGgYEvbJo5", "ccz5icxdBA1qaKA/yIYkE2", "d5jpKYAsBNvrByy7lQjOYs", "d9S6j4u/5Lbr3kdXguAQ2r", "fd7h9oouhN/oDDqhek0DnK", "73LV/afAFPN5t5yLSL8+aG", "abgdiLouVH15mYNH4G4TdV", "22mY9+93FO+a4vQh7YgU0L", "2b5Src/V1AP6VuEwVIHsqt", "190dWvJ8VCFLOKZA5GKA0p", "b0wrau7tBFMo94eYnLb0bp", "48FDvnbEBGEKz0brTgA0X+", "d13i5D2BhHBZrgGQWPe4Ib", "5fSRz1syJM7JAzBkqa4VVz", "2aKWBXJHxKHLvrBUi2yYZQ", "6dkeWRTOBGXICfYQ7JUBnG", "14TDKXr2NJ6LjvHPops74o", "3ae7efMv1CLq2ilvUY/tQi", "1fQoC5TWZAC6Gm9lUpa3nI", "9eQEqKuFRM4LoIELsiIoxf", "e84WtWXkNE8IsZx/vPQRpS", "056bsMVdFJyJIx+5EsspcL", "2dqRzpZdNHTZAQ0PdSELiG", "73VJYn8l5Fhr564VzYr3qK", "0f7lGj+edPnaKIOu2a7k0v", "38puk7aVJFv7GTz7V/LoE8", "30m/UcuRZGkZR8SQ9KJ5v2", "d8yECgNchBNqeIGIAiVyDg", "5285+L3JZCto76pQSvqr7U", "59nPLHClZDgJJMgURP73nt", "63yOTMJEZDBK2kQbcgTrZ5", "06JkGsvudCio/O2SWNoFmm", "0f/KfBfa1NrJauagxwtpoY", "10ycNrUtROuK5y0NBvJd5v", "15OTvcOJRL6LqNjhcapK+S", "16rUq/PIpJupbAC+rspjpL", "1evq6UZHdBnZ6RO2KAOy3f", "1ezsnuRGlNKL4Rn2AHriXw", "1e/Q2MYqVHypOh+pzk3/hr", "219l64yFdIga9QB4opvjff", "23YJX0u+tPHoLd+2VTrXe7", "2adzHSbaNN+pteCmxyEzQw", "2fwGOZRdlLU7tEl4ctOwXu", "303TjoUGpIga4LDhcSrHp+", "31Wi2S5AxJ8b/WHkLuW4h3", "322NxC8ThFRqiTs817qZHO", "348QCXvZRMOIWrxSoW6J6i", "36WEdddclEKqcKnzzmlW6e", "37kPfo5JNPF6HuRGbU6apn", "3fFbjXMspL+6M1vM+8Q2Q0", "40ZqeER99Glpkr91E4kfLb", "42vi+DbYNPqLJh1nszmY3f", "43QdNXQqZCk6B2geYqiNyp", "44Gr5gQqFFa6+qcIKYCCiD", "47lq4X95hD9K6SjY9OzP0E", "4avsy/vdBDrIOcza/75jK/", "50b8uEcCBGarc8Vddibek8", "53HKPMmGlIA6wlKEeKU/QD", "54mgAGv2dLqZ6cIfeCt6LO", "5a1Yh5KJVPP4fOdZmQRgFw", "5b/2VDDp9D447Duj6iexgE", "5dPFVIcy5H8qLI96Ze95x+", "5f1RNrLG9IkY+VRKTQm9dc", "600dnWEIxJvoryk1aEg5Ia", "64+ib5Gc1Lyp7fz3d11RIA", "73ba9YaHJPQY4GxvWSLqwJ", "74YhZ91LhMuplgR0CTy57h", "74+gTYCAZOJpPcAJyK4dPo", "76pqVfd5xIiocHhMvAi5Fr", "7d/6HJ5q9G/JvD2ON1bjBc", "82T+ynnmNElpGTNozVnowm", "8aBbuq3fZOkZX5d0MSffuA", "8aQFDdX3FJo4Twkv3bChl4", "8bV8NKWkhIU5oKx/ibA0gI", "94lX/6brRBLLASQPH8OIKC", "97AO0TLN1Inpp+cT4GZ7rs", "9cVqsX3RNCvK3K7LLkUR1l", "a2AMm1lZVKEpH7B9blWQPL", "a6T1szRzNLq7BU56QMwpEG", "acl254bThEmKi5RX/rg29q", "addsEpP9ZJC4iGJBSReW0E", "b7uQ/oxlFFu7Eq3HIx1Pde", "b8atyqWuZATpkrU+yP6Q6W", "bbT7sOqj5EXKbP0b4foyxV", "bdh3JoNghNJZsU0TaO97Hh", "c3GiIH+AhFjalrUA/BfpPA", "c4T0TEfqpKqqskGXTo7GmU", "c7IU7aBntGS7syzO03BBio", "d0iNsdJQxIJrM+PLJtquP/", "d4dGmQesJIYqBI+/ZYRRv0", "d70FZSjNVNjZVpNioVVfum", "dafAqya4xE5LFqTnPGDHZo", "e0RDi5149IJrkTNSra12jk", "e0czTi31VH+J1CWQoVLhmM", "e0hCyaPHhMP5Kt5GdBzLjV", "e4j0A8aLRA+KsEoUEevr5h", "f0J6yITG1OlqLIGjC8qiJB", "f10upw3ctHxJup4o2LCwV1", "fdlWldzHpDx7x+769cq9xg", "fdvtodv0dBJqx6YcZ5pgzW", "7cn9ju1/ZAHJ/CnXms51K4", "c0BAyVxX9JzZy8EjFrc9DU", "cffgu4qBxEqa150o1DmRAy", "c03dKa+2dKG7n46+Qha/bl", "92WmDWs65IOZWndJ4WQOHp", "0ek66qC1NOQLjgYmi04HvX", "7a/QZLET9IDreTiBfRn2PD", "37OsWXSGdCGZL4+A8/c0HC", "7b5KAfBidDiI5LyenVYwOK", "f6m48mHOpCcLpc4GEqN0NX", "00qIAtGo1GVbRYZgdVfm+J", "02bnyDbzdDBYAUe+w+4uTp", "03LIJnhh9PU764U1E0fHWv", "0d6GoYpkROfoQKubFxOHxa", "0e22VJG09PRrbFDzQkvD5q", "10YM8VXINNbLVcotii/7PS", "14fBFdyxxHtagjFyqAxq4C", "1bmN41uARAWID5yjEUXKDA", "26d7UGqwRJPYgazPhf1aRT", "29FYIk+N1GYaeWH/q1NxQO", "35lwHv+ZxBla3Vf5weCDof", "3dXWE8dwVNApvJ/0F5G2SZ", "44rAYJ52xCObVla9W7Ryrl", "4dqRJz4c1COYXfvcU9y6nA", "54cRSI/RpKWIZtEIv53/vz", "59wjl6OvdHFaLJpRNTV4QI", "5cloMGFwVEurduJ8l7ViZd", "5fzUG+jmVI36T33CO5jQRG", "60G3G9/MZMxpFr6wbFxkmP", "6cccBP0r9FWpwtAiqdwPaQ", "6fH9SSoylKSqYeRVZa3pHd", "79tslS6OtGr54tXSko+PYh", "818sFRY71Mf5SzNbr9xV7Y", "81/lXijCJLuaum7r2lGlD0", "84DnEQ3HlBBZ0QUMr0WJsj", "9ed5KUfDpMxq5QujPgmSMy", "a5Em3ktMFKEqx0G6CYVf22", "aamL1f8DJLg7lT3N8Wx5GE", "afsdayWFtJRbRM7Ftca3mX", "b8PTkyVBFPgZnUVruuWCpr", "bepReuOl1EtK4geOQ/PWFp", "ce9mF8D9pLEIuSFaGolCfs", "d11JjNHHJNI5Eja4t0EUJL", "e5D518FGROY6/7SoxUyOLk", "e55F0UrZpBA42rU/q1ZQLj", "e97GVMl6JHh5Ml5qEDdSGa", "edFi2ssVRD0Yd8Q3sFFMGL", "f0BIwQ8D5Ml7nTNQbh1YlS", "ffhYeuNelFl4eaqkHWGQt2"]
+};
